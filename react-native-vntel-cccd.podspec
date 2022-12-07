@@ -12,8 +12,11 @@ Pod::Spec.new do |s|
   s.homepage     = package['homepage']
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => "https://github.com/demchenkoalex/react-native-module-template.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/longleeproduction/vntel_cccd.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/**/*.{h,m,swift}"
 
   s.dependency 'React'
+  s.dependency "NFCPassportReader"
+  s.dependency "QKMRZScaner"
+  s.dependency "SwiftyTesseract"
 end

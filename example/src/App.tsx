@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import RNModuleTemplateModule, { Counter } from 'react-native-module-template'
+import RNVntelCCCDModule, { Counter } from 'react-native-vntel-cccd'
 
 const App = () => {
   useEffect(() => {
-    console.log(RNModuleTemplateModule)
+    console.log(RNVntelCCCDModule)
   })
 
   return <Counter />

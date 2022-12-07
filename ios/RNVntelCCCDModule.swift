@@ -1,14 +1,15 @@
 //
-//  RNModuleTemplateModule.swift
-//  RNModuleTemplateModule
+//  RNVntelCCCDModule.swift
+//  RNVntelCCCDModule
 //
-//  Copyright © 2022 Alex Demchenko. All rights reserved.
+//  Copyright © 2022 Long Lee. All rights reserved.
 //
 
 import Foundation
+//import QKMRZScanner
 
-@objc(RNModuleTemplateModule)
-class RNModuleTemplateModule: NSObject {
+@objc(RNVntelCCCDModule)
+class RNVntelCCCDModule: NSObject {
   @objc
   func constantsToExport() -> [AnyHashable : Any]! {
     return ["count": 1]
