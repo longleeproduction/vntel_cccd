@@ -73,7 +73,13 @@ PODS:
   - fmt (6.2.1)
   - glog (0.3.5)
   - libevent (2.1.12)
+  - NFCPassportReader (1.1.9):
+    - OpenSSL-Universal (= 1.1.180)
   - OpenSSL-Universal (1.1.180)
+  - QKMRZParser (2.0.0)
+  - QKMRZScanner (3.0.0):
+    - QKMRZParser (~> 2.0.0)
+    - SwiftyTesseract (~> 3.1.3)
   - RCT-Folly (2021.06.28.00-v2):
     - boost
     - DoubleConversion
@@ -272,6 +278,11 @@ PODS:
   - React-jsinspector (0.67.5)
   - React-logger (0.67.5):
     - glog
+  - react-native-vntel-cccd (0.1.1):
+    - NFCPassportReader
+    - QKMRZScanner
+    - React
+    - SwiftyTesseract
   - React-perflogger (0.67.5)
   - React-RCTActionSheet (0.67.5):
     - React-Core/RCTActionSheetHeaders (= 0.67.5)
@@ -337,6 +348,7 @@ PODS:
     - React-jsi (= 0.67.5)
     - React-logger (= 0.67.5)
     - React-perflogger (= 0.67.5)
+  - SwiftyTesseract (3.1.3)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -383,6 +395,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - react-native-vntel-cccd (from `../node_modules/react-native-vntel-cccd`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -411,7 +424,11 @@ SPEC REPOS:
     - FlipperKit
     - fmt
     - libevent
+    - NFCPassportReader
     - OpenSSL-Universal
+    - QKMRZParser
+    - QKMRZScanner
+    - SwiftyTesseract
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -449,6 +466,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-vntel-cccd:
+    :path: "../node_modules/react-native-vntel-cccd"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -494,7 +513,10 @@ SPEC CHECKSUMS:
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 85ecdd10ee8d8ec362ef519a6a45ff9aa27b2e85
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  NFCPassportReader: 3a4b15d28c89a1f747c957f2bce1230c268dba25
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
+  QKMRZParser: 6b419b6f07d6bff6b50429b97de10846dc902c29
+  QKMRZScanner: cf2348fd6ce441e758328da4adf231ef2b51d769
   RCT-Folly: 803a9cfd78114b2ec0f140cfa6fa2a6bafb2d685
   RCTRequired: 412e994c1e570cf35378a32c18fd46e50634938b
   RCTTypeSafety: ef27340c728e6d673af345ed69e479a010c8a2d8
@@ -507,6 +529,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: e9895ccae253323ca70f693945fecbba091f0abd
   React-jsinspector: ec4fe4f65ccf9d67c8429dda955d3412db8a25ef
   React-logger: 85f4ef06b9723714b2dfa5b0e5502b673b271b58
+  react-native-vntel-cccd: 67321feb9e0cda6159e15633b97b4968364318cd
   React-perflogger: d32ee13196f4ae2e4098fb7f8e7ed4f864c6fb0f
   React-RCTActionSheet: 81779c09e34a6a3d6b15783407ba9016a774f535
   React-RCTAnimation: b778eaaa42a884abcc5719035a7a0b2f54672658
@@ -519,9 +542,10 @@ SPEC CHECKSUMS:
   React-RCTVibration: c3b8a3245267a3849b0c7cb91a37606bf5f3aa65
   React-runtimeexecutor: 434efc9e5b6d0f14f49867f130b39376c971c1aa
   ReactCommon: a30c2448e5a88bae6fcb0e3da124c14ae493dac1
+  SwiftyTesseract: 1f3d96668ae92dc2208d9842c8a59bea9fad2cbb
   Yoga: 099a946cbf84c9b32ffdc4278d72db26710ecf92
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 9d2dead264e8a42ac453e46434ac53d9891db9dd
+PODFILE CHECKSUM: c6890062cb678140f32de5b5887dd7aab4068fb9
 
 COCOAPODS: 1.11.3
