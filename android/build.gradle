@@ -26,7 +26,7 @@ android {
     buildToolsVersion safeExtGet('buildToolsVersion', '31.0.0')
 
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 21)
+        minSdkVersion safeExtGet('minSdkVersion', 26)
         targetSdkVersion safeExtGet('targetSdkVersion', 31)
     }
 }
@@ -39,4 +39,15 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'
+
+    // libs
+    implementation fileTree(dir: 'libs', include: [ 'vnidreader-library-1.0.1.aar'])
+    // dependencies
+    implementation group: 'org.slf4j', name: 'slf4j-android', version: '1.7.28'
+    implementation group: 'commons-io', name: 'commons-io', version: '20030203.000550'
+    implementation 'com.github.mhshams:jnbis:1.1.0'
+    implementation 'com.gemalto.jp2:jp2-android:1.0.3'
+    implementation 'com.rmtheis:tess-two:9.0.0'
+    implementation 'com.google.code.gson:gson:2.8.7'
+
 }
